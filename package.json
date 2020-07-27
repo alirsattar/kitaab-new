@@ -9,12 +9,14 @@
     "prestart": "npm run build",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set DEBUG=express:* & nodemon --config \"./nodemon.json\"/"
+    "dev": "set DEBUG=express:* & set NODE_ENV=development & nodemon --config \"./nodemon.json\"/"
   },
   "dependencies": {
     "@types/cookie-parser": "^1.4.2",
     "@types/http-errors": "^1.8.0",
     "@types/morgan": "^1.9.1",
+    "@types/sequelize": "^4.28.9",
+    "@types/validator": "^13.1.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
@@ -32,6 +34,7 @@
   "devDependencies": {
     "@types/express": "^4.17.7",
     "@types/node": "^14.0.26",
+    "sequelize-cli": "^6.2.0",
     "tslint": "^6.1.2",
     "typescript": "^3.9.7"
   }
